@@ -1,13 +1,13 @@
-package com.example.planosapi;
+package com.planos.appbackend;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class PlanosapiApplication {
+public class PlanosApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(PlanosapiApplication.class, args);
+		SpringApplication.run(PlanosApplication.class, args);
 	}
 
 }
