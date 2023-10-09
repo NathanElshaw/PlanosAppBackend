@@ -1,7 +1,7 @@
-package com.example.planosapi.apis.cotroller;
+package com.planos.appbackend.apis.controller;
 
-import com.example.planosapi.apis.model.UserModel;
-import com.example.planosapi.service.UserService;
+import com.planos.appbackend.apis.model.UserModel;
+import com.planos.appbackend.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -13,7 +13,7 @@ import java.util.Optional;
 
 public class UserController {
 
-    private UserService userService;
+    private final UserService userService;
 
     @Autowired
     public UserController(UserService userService){
