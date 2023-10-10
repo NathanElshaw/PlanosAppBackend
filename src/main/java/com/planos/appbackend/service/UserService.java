@@ -10,15 +10,10 @@ import java.util.*;
 
 public class UserService {
 
-    private final List<UserModel> userList;
+    private  List<UserModel> userList;
 
     public UserService() {
-        userList = new ArrayList<>();
 
-        UserModel user1 = new UserModel(1, "Ida", UserModelGender.Female,32,  "ida@mail.com");
-        UserModel user2 = new UserModel(2, "Hilda", UserModelGender.Female,33,  "Hilda@mail.com");
-
-        userList.addAll(Arrays.asList(user1, user2));
     }
     public Optional<Object> getUser(Integer id) {
         Optional<Object> optional = Optional.empty();
