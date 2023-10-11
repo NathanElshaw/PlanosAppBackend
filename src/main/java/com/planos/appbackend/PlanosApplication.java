@@ -21,7 +21,7 @@ public class PlanosApplication {
 	@Bean
 	CommandLineRunner runner(UserInterface userRepository) {
 		return args -> {
-			UserModelCompany UsersCompany = new UserModelCompany("PPH", "ew90fhw489t", "User", ZonedDateTime.now());
+			UserModelCompany UsersCompany = new UserModelCompany("PPH", "ew90fhw489t", "User", "String");
 			UserModel User = new UserModel("Nathan",
 					UserModelGender.Female,
 					23,
