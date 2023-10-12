@@ -15,10 +15,10 @@ public class UserService {
     public UserService() {
 
     }
-    public Optional<Object> getUser(Integer id) {
+    public Optional<Object> getUser(String id) {
         Optional<Object> optional = Optional.empty();
         for(UserModel user: userList){
-            if(id == user.getId()){
+            if(Objects.equals(id, user.getId())){
                 optional = Optional.of(user);
                 return optional;
             }
