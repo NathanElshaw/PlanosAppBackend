@@ -4,16 +4,18 @@ import com.planos.appbackend.apis.model.subModels.UserModelCompany;
 import com.planos.appbackend.enums.UserModelGender;
 import lombok.Data;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Data
 @Document
 public class UserModel {
     @Id
-    private  int id;
+    private  String id;
     private  String name;
     private  UserModelGender gender;
     private  int age;
+    @Indexed(unique = true)
     private  String email;
     private  String username;
     private  String password;
